@@ -19,6 +19,6 @@ app.get("/status", function (req, res) {
   res.writeHead(200);
   res.end(`Power status = ${i}`);
 });
-app.listen(port, host, function () {
+const server = app.listen(port, host, function () {
   console.log(`Server is running on http://${host}:${port}`);
 });
